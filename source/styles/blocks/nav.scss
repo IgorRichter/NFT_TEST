@@ -1,0 +1,25 @@
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 105px;
+  row-gap: 20px;
+
+  @media (max-width: $tablet-max-width) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.nav__link {
+  color: $link-color;
+  transition: 300ms ease-in;
+  transition-property: opacity;
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 400;
+
+  &:hover {
+      opacity: 0.6;
+  }
+}

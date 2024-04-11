@@ -1,0 +1,25 @@
+// Шрифты
+
+$primary-font: "Inter", "Arial", sans-serif;
+
+// Цвета
+
+$transparent: transparent;
+$basic-white: #ffffff;
+$basic-black: #000000;
+$primary-color: #1d2532;
+$secondary-color: #c3f33b;
+$third-color: #1dd844;
+$text-color: #e0ffac0d;
+$text-color-2: #242424;
+$link-color: #cecece;
+$error-color: #ff8282;
+
+// Размеры вьюпортов
+
+$mobile-max-width: 576px;
+$tablet-max-width: 1024px;
+$desktop-width: 1025px;
+$content-width: 1280px;
+$container-offset: 16px;
+$container-width: calc($content-width + $container-offset * 2);

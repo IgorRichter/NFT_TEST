@@ -1,0 +1,208 @@
+.advantages {
+  padding-top: 195px;
+  padding-bottom: 200px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 70px;
+  }
+
+  .container {
+      padding-right: 0;
+      padding-left: 0;
+  }
+}
+
+.advantages__box {
+  position: relative;
+  border-radius: 20px;
+  padding-top: 130px;
+  padding-bottom: 120px;
+  background-color: $primary-color;
+  min-height: 1095px;
+
+  background-image:
+      url("/images/advantages-purple-spot.png"),
+      url("/images/advantages-purple-spot.png");
+  background-repeat: no-repeat;
+  background-position:
+      bottom -50%  left -20%,
+      top -50% right -20%;
+  background-size: 60% auto, 60% auto;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 40px;
+    padding-bottom: 70px;
+
+    background-image: url("/images/advantages-purple-spot.png");
+    background-position: top -150px right -100px;
+    background-size: 400px auto;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    top: -85px;
+    right: 100px;
+    background-image: url('/icons/stack.svg#puple-ballon');
+
+    @media (max-width: $tablet-max-width) {
+      width: 88px;
+      height: 88px;
+      right: -40px;
+      top: -40px;
+      background-size: 88px auto;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 84px;
+    top: 100px;
+    left: 165px;
+    background-image: url("/icons/blue-ballon.svg");
+    background-repeat: no-repeat;
+    background-position: bottom -50%  left -20%;
+    background-size: 100%;
+
+    @media (max-width: $tablet-max-width) {
+      width: 22px;
+      height: 22px;
+      left: 20px;
+    }
+  }
+}
+
+.advantages__content {
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    bottom: 107px;
+    right: 143px;
+    background-image: url("/icons/purple-blur-balloon.svg");
+    background-repeat: no-repeat;
+    background-position: bottom -50%  left -20%;
+    background-size: 100%;
+
+    @media (max-width: $tablet-max-width) {
+      width: 65px;
+      height: 65px;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 45px;
+  line-height: 58px;
+  font-weight: 600;
+  text-align: center;
+  color: $basic-white;
+
+  @media (max-width: $tablet-max-width) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 180px;
+
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+.advantages__list {
+  margin-top: 65px;
+  list-style: none;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-top: 30px;
+    grid-template-columns: 1fr;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  z-index: 0;
+
+  display: flex;
+  width: 300px;
+  min-height: 310px;
+
+  background-color: #313b4e;
+  border-radius: 20px;
+  padding: 50px 14px;
+  padding-top: 185px;
+
+  @media (max-width: $tablet-max-width) {
+    width: auto;
+  }
+
+  &--icon-star {
+      background-image: url("/images/emoji-star.png");
+      background-repeat: no-repeat;
+      background-position: top 15px center;
+  }
+
+  &--icon-winking {
+      background-image: url("/images/emoji-winking.png");
+      background-repeat: no-repeat;
+      background-position: top 15px center;
+  }
+
+  &--icon-money {
+      background-image: url("/images/emoji-money.png");
+      background-repeat: no-repeat;
+      background-position: top 15px center;
+  }
+
+  &--icon-cool {
+      background-image: url("/images/emoji-cool.png");
+      background-repeat: no-repeat;
+      background-position: top 15px center;
+  }
+
+  &:before {
+      position: absolute;
+      z-index: 1;
+      bottom: -20px;
+      left: 17px;
+      content: "";
+      right: 17px;
+      height: 20px;
+      background-color: #2b3445;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+  }
+}
+
+.advantages__card-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 19px;
+  line-height: 25px;
+  text-align: center;
+  font-weight: 400;
+  color: $basic-white;
+}

@@ -1,0 +1,104 @@
+.hero {
+  background-color: $primary-color;
+  color: $basic-white;
+}
+
+.hero__wrapper {
+  margin: 0 auto;
+  padding-top: 303px;
+  padding-bottom: 270px;
+  max-width: 1920px;
+
+  background-image:
+          url("/images/purple-spot.png"),
+          url("/images/hero.png");
+  background-repeat: no-repeat;
+  background-position: top left, right bottom;
+  background-size: 641px 437px, 927px 820px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-top: 105px;
+    padding-bottom: 50px;
+
+    background-size: 641px 437px, 410px auto;
+    background-position: top left, left 45% top 200px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    background-position: top left, left 70% top 200px;
+  }
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title {
+  max-width: 750px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 72px;
+  line-height: 76px;
+  font-weight: 400;
+
+  @media (max-width: $tablet-max-width) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 260px;
+
+    text-align: center;
+    font-size: 25px;
+    line-height: 26px;
+  }
+}
+
+.hero__text-bold {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 72px;
+  line-height: 75px;
+  font-weight: 700;
+  color: $basic-white;
+
+  @media (max-width: $tablet-max-width) {
+    text-align: center;
+    font-size: 25px;
+    line-height: 26.25px;
+  }
+}
+
+.hero__description {
+  max-width: 500px;
+
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  font-size: 23px;
+  line-height: 28px;
+  font-weight: 400;
+  color: $link-color;
+
+  @media (max-width: $tablet-max-width) {
+      max-width: 240px;
+
+      margin-top: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+      font-size: 18px;
+      line-height: 22px;
+  }
+}
+
+.hero__button-action {
+  margin-top: 67px;
+
+  @media (max-width: $tablet-max-width) {
+      align-self: center;
+  }
+}
