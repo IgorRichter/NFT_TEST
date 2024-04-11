@@ -1,0 +1,1 @@
+(function(){let t=document?.querySelector(".button-open"),c=document?.querySelector(".button-close"),e=document?.querySelector(".main-header__menu");t?.addEventListener("click",()=>{e.classList.add("is-active")}),c?.addEventListener("click",()=>{e.classList.remove("is-active")})})();

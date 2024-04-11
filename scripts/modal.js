@@ -1,0 +1,1 @@
+(function(){let e=document?.querySelector(".button-modal-open"),o=document?.querySelector(".button-modal-close"),t=document?.querySelector(".modal");e?.addEventListener("click",()=>{t.classList.remove("is-not-active")}),o?.addEventListener("click",()=>{t.classList.add("is-not-active")})})();
