@@ -4,10 +4,10 @@
   const menu = document?.querySelector('.main-header__menu');
 
   burger?.addEventListener('click', () => {
-    menu.classList.add('is-active')
-  })
+    menu.classList.add('is-active');
+  });
 
   close?.addEventListener('click', () => {
-    menu.classList.remove('is-active')
-  })
+    menu.classList.remove('is-active');
+  });
 })();
